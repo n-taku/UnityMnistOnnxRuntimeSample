@@ -11,8 +11,8 @@ public class Paint : MonoBehaviour
     public Text answer;
     
     private Texture2D t;
-    private Color[] buffer = new Color[width * height];
-    private float[] input = new float[width * height];
+    private readonly Color[] buffer = new Color[width * height];
+    private readonly float[] input = new float[width * height];
     private MnistInference mnistInference;
 
     private void Start()
